@@ -5,8 +5,9 @@ defmodule LiveViewExampleWeb.WeatherLiveTest do
 
   test "disconnected and connected render", %{conn: conn} do
     {:ok, page_live, disconnected_html} = live(conn, "/")
-    
-    assert disconnected_html =~ "OpenWeather Station"
-    assert render(page_live) =~ "OpenWeather Station"
+
+    title = "Weather Temperature"
+    assert disconnected_html =~ title
+    assert render(page_live) =~ title
   end
 end

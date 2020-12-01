@@ -8,7 +8,7 @@ defmodule LiveViewExampleWeb.WeatherLive do
     params = %{
       location: empty_location(),
       loading: false,
-      page_title: "OpenWeather"
+      page_title: "Weather Temperature"
     }
 
     socket = assign(socket, params)
@@ -21,8 +21,15 @@ defmodule LiveViewExampleWeb.WeatherLive do
   def render(assigns) do
     ~L"""
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>OpenWeather Station</title>
-      <h1>OpenWeather Station</h1>
+
+      <title>
+        <%= assigns[:page_title] %>
+      </title>
+
+      <h1>
+        <%= assigns[:page_title] %>
+      </h1>
+
       <h2>
         <img src="<%= Routes.static_path(@socket, "/images/phoenix-logo.svg") %>" alt="Phoenix Framework Logo"/>
       </h2>

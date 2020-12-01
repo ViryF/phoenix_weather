@@ -1,19 +1,42 @@
-# LiveViewExample
+# Project
+The Weather Temperature project consists of server-side code to fetch the temperature from an external API.
 
-To start your Phoenix server:
+The project was developed using:
 
-  * Install dependencies with `mix deps.get`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
+* Elixir
+* HTTPoison
+* Phoenix Framework (Live View)
+* OpenWeather API
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+# Installation and Usage
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+  1. OpenWeather API key
 
-## Learn more
+     This project uses the data from OpenWeather API. Create a free account to get your key accessing [sign-up](https://home.openweathermap.org/users/sign_up).
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+  2. Set environment variable
+
+```sh
+export OPEN_WEATHER_KEY=PUT_YOUR_API_KEY_HERE
+```
+
+  3. Clone project
+  ```sh
+  git clone https://github.com/thvitti/phoenix_weather.git
+  cd phoenix_weather
+  ```
+
+  4. Fetch Elixir dependencies
+    `mix deps.get`
+
+  5. Install Node.js dependencies with `npm install` inside the `assets` directory
+
+  6. Run tests
+    `mix test`
+
+  7. Start Phoenix endpoint with `mix phx.server`
+
+
+  Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+  ![Screen example](/assets/static/images/screen.png)
