@@ -44,8 +44,7 @@ defmodule LiveViewExample.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:httpoison, "~> 1.7"},
-      {:json, "~> 1.2"}
+      {:httpoison, "~> 1.7"}
     ]
   end
 

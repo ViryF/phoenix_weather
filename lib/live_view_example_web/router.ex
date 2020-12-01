@@ -17,7 +17,7 @@ defmodule LiveViewExampleWeb.Router do
   scope "/", LiveViewExampleWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    live "/", WeatherLive, :index
   end
 
   # Other scopes may use custom stacks.

@@ -1,5 +1,5 @@
 defmodule LiveViewExample.Weather do
-  
+
   def search_by(nil) do
     {:error, "location is obligatory"}
   end
@@ -52,7 +52,7 @@ defmodule LiveViewExample.Weather do
   defp parse_response(%HTTPoison.Response{body: body, status_code: 200}) do
     data =
       body
-      |> JSON.decode!()
+      |> Jason.decode!()
 
     {:ok, data}
   end
