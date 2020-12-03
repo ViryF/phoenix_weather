@@ -1,4 +1,7 @@
-# Project
+# Weather Temperature Phoenix Live View
+
+## Project
+
 The Weather Temperature project consists of server-side code to fetch the temperature from an external API.
 
 The project was developed using:
